@@ -1,0 +1,153 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practising Html and CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23492b44cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <img src="/assets/logos.png" alt="Logo">
+        <nav class="nav-container">
+            <ul>
+                <li ><a href="index.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <div class="container-portfolio">
+        <h1>Crafting Modern Web Experiences</h1>
+        <p>As a skilled web developer, I specialize in building intuitive and dynamic websites that connect with users and drive results. With a strong foundation in HTML, CSS, JavaScript, and React, I am committed to turning ideas into innovative digital solutions.</p>
+    </div>
+    
+
+    <div class="wrapper-contact">
+        <div>
+            <h2>Different ways to get in touch</h2>
+            <ul id="contact-icons">
+                <li><a href="tel:+254725648747"><i class="fa-solid fa-phone"></i>+2547 15 648 747</a></li>
+                <li><a href="mailto:abdiazizsaman394@gmail.com"><i class="fa-solid fa-envelope"></i>abdiazizsaman394@gmail.com</a></li>
+                <li><a href=""><i class="fa-brands fa-square-instagram"></i>instagram</a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+            </ul>
+
+        </div>
+        <div>
+            <h2>Get in touch</h2>
+            <form action="">
+                <div class="full-fields">
+                    <label for="name">Your Name *</label>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="full-fields">
+                    <label for="phone">Phone Number *</label>
+                    <input type="phone" name="phone" placeholder="Phone Number" required>
+                </div>
+                <div class="full-fields">
+                    <label for="email">Email address *</label>
+                    <input type="text" name="email" placeholder="Email address" required>
+                </div>
+                <div class="textarea">
+                    <label for="message"> Message *</label>
+                    <textarea placeholder="Please enter your comment.." name="message"></textarea>
+                </div>
+                <button class="submit-btn" type="submit">submit</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer id="grid-footer">
+    <div class="content-footer">
+        <div>
+            <img src="/assets/logo.png" alt="Logo">
+            <h4>Saman's Tech</h4>
+        </div>
+
+        <div>
+            <h4>Internal Links</h4>
+            <ul>
+                <li ><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </div>
+
+        <div>
+            <h4>Get in touch</h4>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/abdiaziz-saman-b78844272/" target="_blank">Saman's Tech</a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/maps/place/Nairobi/@-1.3031874,36.5177334,10z/data=!3m1!4b1!4m6!3m5!1s0x182f1172d84d49a7:0xf7cf0254b297924c!8m2!3d-1.2920659!4d36.8219462!16zL20vMDVkNDk?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">My Address</a>
+                </li>
+                <li>
+                    <a href="https://wa.me/254715648747" target="_blank">Whatsapp Me</a>
+                </li>
+                <li>
+                    <a href="mailto:abdiazizsaman394@gmail.com?Subject=Development%20website" target="_blank">My Email</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div>
+            <h4>Stay Connected</h4>
+            <input type="email" placeholder="Enter Email"class="input-newsletter">
+            <button class="submit-newsletter">Sign Up <i class="fa-solid fa-caret-right"></i></button>
+            <ul class="social-footer">
+                <li>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+</footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-container ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    </script>
+
+</body>
+</html>
