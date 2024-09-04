@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practising Html and CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23492b44cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        <img src="/assets/logos.png" alt="Logo">
+        <nav class="nav-container">
+            <ul>
+                <li ><a href="index.html" >Home</a></li>
+                <li><a href="about.html"  class="active">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <h2>About Me</h2>
+    <div id="about-me">
+        
+        <p>
+            I am a dedicated Frontend Developer with a passion for crafting engaging and user-friendly web applications. 
+            Specializing in HTML, CSS, JavaScript, and React, I bring creative and technical expertise to build responsive, 
+            intuitive interfaces that enhance the user experience. My deep understanding of modern web development tools 
+            and practices allows me to deliver high-quality, efficient solutions tailored to meet project goals.
+        <br>
+            Beyond coding, I am an avid sports fan who thrives on the competitive spirit and teamwork that sports embody, 
+            values that I bring into my professional life. I continuously seek opportunities to learn, adapt, and grow within 
+            the ever-evolving field of web development, driven by a commitment to excellence and innovation.
+        </p>
+
+        <img src="assets/imagees.jpg" alt="">
+    </div>
+
+    
+    <!-- Footer -->
+    <footer id="grid-footer">
+        <div class="content-footer">
+            <div>
+                <img src="/assets/logo.png" alt="Logo">
+                <h4>Saman's Tech</h4>
+            </div>
+
+            <div>
+                <h4>Internal Links</h4>
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    
+                </ul>
+            </div>
+
+            <div>
+                <h4>Get in touch</h4>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/abdiaziz-saman-b78844272/" target="_blank">Saman's Tech</a>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/Nairobi/@-1.3031874,36.5177334,10z/data=!3m1!4b1!4m6!3m5!1s0x182f1172d84d49a7:0xf7cf0254b297924c!8m2!3d-1.2920659!4d36.8219462!16zL20vMDVkNDk?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">My Address</a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/254715648747" target="_blank">Whatsapp Me</a>
+                    </li>
+                    <li>
+                        <a href="mailto:abdiazizsaman394@gmail.com?Subject=Development%20website" target="_blank">My Email</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h4>Stay Connected</h4>
+                <input type="email" placeholder="Enter Email"class="input-newsletter">
+                <button class="submit-newsletter">Sign Up <i class="fa-solid fa-caret-right"></i></button>
+                <ul class="social-footer">
+                    <li>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-container ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+</script>
+
+</body>
+</html>
