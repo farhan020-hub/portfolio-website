@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saman's Tech Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23492b44cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <img src="/assets/logos.png" alt="Logo">
+        <nav class="nav-container">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>Crafting Engaging Digital Experiences</h1>
+            <p>I am a passionate web developer specializing in creating modern, responsive, and user-centric web applications. Let's bring your ideas to life with the latest technologies and design trends.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <h2>My Work</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2024/05/24/18/14/astronaut-8785566_960_720.png" alt="Web Development Project">
+                    <div class="portfolio-overlay">
+                        <h3>Web Development</h3>
+                        <p>Building interactive and responsive web applications using HTML, CSS, JavaScript, and React.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2024/08/26/12/29/milky-way-8999255_1280.jpg" alt="UI/UX Design Project">
+                    <div class="portfolio-overlay">
+                        <h3>UI/UX Design</h3>
+                        <p>Designing user interfaces that are both visually appealing and easy to navigate, enhancing user experiences.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="portfolio-item">
+                <a href="#">
+                    <img src="https://cdn.pixabay.com/photo/2023/10/07/14/24/smartwatch-8300238_960_720.jpg" alt="Mobile App Development">
+                    <div class="portfolio-overlay">
+                        <h3>Mobile App Development</h3>
+                        <p>Creating mobile applications that are functional, efficient, and tailored to meet user needs.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <h2>Have a Project in Mind?</h2>
+        <p>Let's work together to create something amazing. Reach out to me, and let's discuss how we can turn your vision into reality.</p>
+        <a href="contact.html" class="cta-button">Get in Touch</a>
+    </section>
+
+    <!-- Footer -->
+    <footer id="grid-footer">
+        <div class="content-footer">
+            <div>
+                <img src="/assets/logos.png" alt="Logo">
+                <h4>Saman's Tech</h4>
+            </div>
+            <div>
+                <h4>Internal Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Get in Touch</h4>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/abdiaziz-saman-b78844272/" target="_blank">Saman's Tech</a></li>
+                    <li><a href="https://www.google.com/maps/place/Nairobi" target="_blank">My Address</a></li>
+                    <li><a href="https://wa.me/254715648747" target="_blank">Whatsapp Me</a></li>
+                    <li><a href="mailto:abdiazizsaman394@gmail.com?Subject=Development%20website" target="_blank">My Email</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Stay Connected</h4>
+                <input type="email" placeholder="Enter Email" class="input-newsletter">
+                <button class="submit-newsletter">Sign Up <i class="fa-solid fa-caret-right"></i></button>
+                <ul class="social-footer">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.nav-container ul');
+
+    hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+</script>
+
+</body>
+</html>
